@@ -12,12 +12,12 @@ class GFG {
 
         while (t-- > 0) {
             int n = sc.nextInt();
-            int sumOfn = n * (n + 1) / 2;
-            int sum = 0;
+            long sumOfn = n * (n + 1) / 2;
+            
             for (int i = 0; i < n - 1; ++i) {
-                sum += sc.nextInt();
+                sumOfn -= sc.nextInt(); //to prevent overflow
             }
-            System.out.println(sumOfn - sum);
+            System.out.println(sumOfn);
         }
 
     }
