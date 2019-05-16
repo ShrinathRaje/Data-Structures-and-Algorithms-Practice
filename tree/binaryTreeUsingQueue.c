@@ -109,16 +109,16 @@ void preOrderTraversal(BSTNode *p) {
 
 void inOrderTraversal(BSTNode *p) {
     if(p) {
-        preOrderTraversal(p->left);
+        inOrderTraversal(p->left);
         printf("%i ", p->data);
-        preOrderTraversal(p->right);
+        inOrderTraversal(p->right);
     }
 }
 
 void postOrderTraversal(BSTNode *p) {
     if(p) {
-        preOrderTraversal(p->left);
-        preOrderTraversal(p->right);
+        postOrderTraversal(p->left);
+        postOrderTraversal(p->right);
         printf("%i ", p->data);
     }
 }
