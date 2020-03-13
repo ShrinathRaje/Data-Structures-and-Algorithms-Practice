@@ -17,7 +17,7 @@ void create(Stack *st) {
     printf("enter the size of a stack: ");
     scanf("%i", &st->size);
     st->top = -1;
-    st->S = (int *)malloc(st->size * sizeof(Stack));
+    st->S = (int *)malloc(st->size * sizeof(int));
 }
 
 int isEmpty(Stack st) {
